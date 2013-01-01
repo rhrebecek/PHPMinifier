@@ -3,7 +3,7 @@ PHPMinifier
 
 Tool for minimizing PHP script
 
----code
+<?php
 include 'PhpMinifier.php'; 
 
 $dir_iterator = new RecursiveDirectoryIterator("path");
@@ -18,4 +18,4 @@ foreach ($iterator as $file) {
 usort($files);
 
 PhpMinifier::minify($files, 'minified.php'); 
-/---code
+?>
